@@ -1,4 +1,7 @@
+console.clear()
 gsap.registerPlugin(ScrollTrigger);
+
+if(window.innerWidth > 640){
 
 const pageContainer = document.querySelector(".container");
 
@@ -27,16 +30,15 @@ ScrollTrigger.scrollerProxy(pageContainer, {
   pinType: pageContainer.style.transform ? "transform" : "fixed"
 });
 
-////////////////////////////////////
-////////////////////////////////////
 
-////////////////////////////////////
-////////////////////////////////////
+
 window.addEventListener("load", function () {
   // let pinBoxes = document.querySelectorAll(".pin-wrap > *");
   let pinWrap = document.querySelector(".pin-wrap");
   let pinWrapWidth = pinWrap.offsetWidth;
   let horizontalScrollLength = pinWrapWidth - window.innerWidth;
+
+
 
   // Pinning and horizontal scrolling
 
@@ -60,5 +62,6 @@ window.addEventListener("load", function () {
 });
 
 
-////////////////////////////////////
-////////////////////////////////////
+// 
+// 
+};
