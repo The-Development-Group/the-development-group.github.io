@@ -3,6 +3,8 @@
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 :root {
   --hero-text-color: #303030;
@@ -77,17 +79,26 @@ img.hero{
 }
 p.admin {
   position: absolute;
-  bottom: 10vw;
+  bottom: 5vh;
   right: 10vw;
   width: fit-content;
   text-align: right;
+  font-size: 20px;
   font-weight: 100;
   line-height: 1.4;
   letter-spacing: 6px;
 }
 
 
-
+.arrow{
+  margin-right: 60px;
+  font-size: 40px;
+  display: flex;
+}
+.left-arrow{
+  margin-right: -20px;
+  margin-top: -50px;
+}
 
 
 #sectionPin {
@@ -125,6 +136,10 @@ h2 {
   max-width: 400px;
   padding: 5rem;
 }
+.bullet-list{
+  margin-left: 1rem;
+  padding: 4rem;
+}
 
 .tdg {
   text-decoration: underline;
@@ -153,14 +168,106 @@ p.admin-footer a{
   background-color: var(--hero-text-color);
   color: var(--bg-color);
 }
+@media screen and (max-width: 1140px){
+  h1{
+    font-size: 7vw;
+    margin-top: 100px;
+    margin-right: 10px;
+  }
+  p.admin{
+    margin-bottom: -10px;
+    margin-right: -20px;
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 768px){
+  p.admin{
+    margin-bottom: -5px;
+    font-size: 14px;
+  }
+}
 
 @media screen and (max-width: 480px){
-  h1{
-    font-size: 1.4rem;
-    margin-top: 100px;
-  }
-  .admin{
+  p.admin{
     margin-bottom: -5px;
-    font-size: 10px;
+    font-size: 12px;
   }
+}
+
+/* BECAUSE NO GSAP MOUSE SCROLLJACK ON MOBILE */
+@media screen and (max-width: 640px){
+  ::-webkit-scrollbar {
+  display: none;
+}
+  body{
+      overflow-x: hidden;
+  }
+   
+    section:not(#sectionPin) {
+      min-height: 100vh;
+      width: 100%;
+      position: relative;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-gap: 2rem;
+      padding: 50px 10vw;
+      margin: auto;
+      place-items: center;
+  }
+  
+  img.hero{
+    width: 300px;
+  }
+    
+
+
+  #sectionPin {
+    /* height: 100vh; */
+    overflow: scroll;
+    overflow-y: hidden;
+    display: flex;
+    background: var(--section-pin-bg);
+    color: var(--section-text-color);
+  }
+    .pin-wrap {
+      height: 100vh;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 50px 10vw;
+    }
+    .pin-wrap > * {
+      min-width: 0vw;
+      padding: 50px 10vw;
+  }
+.tdg-para-1{
+  font-size: 22px;
+}
+  h2 {
+  font-size: 18px;
+	line-height: 1.6;
+	direction: rtl;
+  max-width: 400px;
+  padding: 5rem;
+}
+  .bullet-list{
+    margin-left: 1rem;
+    margin-right: 2rem;
+    padding: 1rem;   
+    width: 600px;
+	  direction: ltr;
+  }
+    img.last-image{
+      margin-left: -200px;
+      height: 100vh;
+    }
+
+    .tdg-footer{
+      background-color: var(--bg-color);
+      color: var(--hero-text-color);
+    }
+
+    p.admin a, p.admin-footer a{
+      font-size: 10px;
+    }
 }
