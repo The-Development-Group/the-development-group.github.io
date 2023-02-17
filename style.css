@@ -126,8 +126,16 @@ p.admin {
 .tdg-para-1{
   font-size: 22px;
 }
+  
+h2{
+  font-size: 22px!important;
+  font-family: 'Droid Serif', serif;
+	font-weight: 400;
+	line-height: 1.6;
+	direction: ltr!important;
+}
 
-h2, p.copy {
+p.copy {
 	font-family: 'Droid Serif', serif;
   font-size: 22px;
 	font-weight: 400;
@@ -141,7 +149,7 @@ h2, p.copy {
   /* margin-left: 1rem;
   margin-right: 2rem;
   padding: 1rem;    */
-  min-width: 500px;
+  min-width: 600px;
 }
 
 
@@ -209,9 +217,9 @@ img.last-image{
 
 /* BECAUSE NO GSAP MOUSE SCROLLJACK ON MOBILE */
 @media screen and (max-width: 640px){
-  ::-webkit-scrollbar {
+  /* ::-webkit-scrollbar {
   display: none;
-}
+} */
   body{
       overflow-x: hidden;
   }
@@ -231,8 +239,15 @@ img.last-image{
   img.hero{
     width: 300px;
   }
-    
 
+  p.admin a{
+    font-size: 10px;
+    padding: 4px;
+    line-height: 1;
+    letter-spacing: 6px;
+    background-color: var(--hero-text-color);
+    color: var(--section-text-color);
+}
 
   #sectionPin {
     /* height: 100vh; */
@@ -253,6 +268,7 @@ img.last-image{
       min-width: 0vw;
       padding: 50px 10vw;
   }
+  
   h2, .copy {
   font-size: 18px;
 	line-height: 1.6;
@@ -270,13 +286,14 @@ img.last-image{
       margin-left: -200px;
       height: 100vh;
     }
+    
+    p.admin-footer a{
+      font-size: 10px;
+    }
 
     .tdg-footer{
       background-color: var(--bg-color);
       color: var(--hero-text-color);
     }
 
-    p.admin a, p.admin-footer a{
-      font-size: 10px;
-    }
 }
