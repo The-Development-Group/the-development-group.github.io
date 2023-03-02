@@ -1,4 +1,9 @@
-### GSAP driven corporate branded product.
+### The Development Group
+
+UI/UX enhanced with smooth and horiztonal scroll using GSAP+ :
+
+`Pinning and horizontal scrolling`
+`Locomotive Scroll`
 
 #### Screen 1
 ![Preview - Screen 1](https://github.com/matthew-via-music/tdg/raw/main/preview/screen1.png)
