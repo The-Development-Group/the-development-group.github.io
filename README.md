@@ -13,3 +13,8 @@ UI/UX enhanced with smooth and horiztonal scroll using GSAP+ :
 
 #### Screen 3
 ![Preview - Screen 3](https://github.com/matthew-via-music/tdg/raw/main/preview/screen3.png)
+
+
+```
+Remove and replace CDN scripts in production.
+```
