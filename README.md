@@ -2,7 +2,7 @@
 
 UI/UX enhanced with smooth and horiztonal scroll using GSAP+ :
 
-`Pinning and horizontal scrolling`
+`Pinning with horizontal scrolling`
 `Locomotive Scroll`
 
 #### Screen 1
