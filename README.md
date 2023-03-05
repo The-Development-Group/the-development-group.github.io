@@ -15,6 +15,8 @@ UI/UX enhanced with smooth and horiztonal scroll using GSAP+ :
 ![Preview - Screen 3](https://github.com/The-Development-Group/the-development-group.github.io/raw/main/preview/screen3.png)
 
 
+[Live Site](https://the-development-group.github.io/)
+
 ```
 Remove and replace CDN scripts in production.
 ```
